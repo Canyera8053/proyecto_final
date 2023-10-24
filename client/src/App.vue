@@ -15,7 +15,7 @@
     <input name="tratamiento" v-model="tratamiento" />
     <label for="Estado">Estado</label>
     <input name="Estado" v-model="Estado" />
-    <button class="mt-4" @click.prevent="postProduct">Add product</button>
+    <button class="mt-4" @click.prevent="postAnimal">Add animal</button>
   </form>
   <a class="btn" href="../src/otra_web/paginas/index.html">WEB</a>
 </template>
@@ -35,9 +35,30 @@ export default {
     };
   },
   methods: {
-    postProduct() {
-      // Handle the form submission here
-      // You can access the form data using the data properties defined above
+    postAnimal() {
+      // Create an object with the form data
+      const animalData = {
+        name: this.name,
+        Especie: this.Especie,
+        Tutora: this.Tutora,
+        Motivo: this.Motivo,
+        hospitalizacion: this.hospitalizacion,
+        tratamiento: this.tratamiento,
+        Estado: this.Estado
+      };
+      
+      // Send the animalData object to the server-side API endpoint
+      axios.post('/api/animals', animalData)
+        .then(response => {
+          // Handle the response from the server
+          console.log(response.data);
+          // Optionally, show a success message or redirect to another page
+        })
+        .catch(error => {
+          // Handle any errors that occurred during the request
+          console.error(error);
+          // Optionally, show an error message to the user
+        });
     },
   },
 };
