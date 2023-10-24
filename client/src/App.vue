@@ -14,10 +14,10 @@
     <label for="tratamiento">Tratamiento</label>
     <input name="tratamiento" v-model="tratamiento" />
     <label for="Estado">Estado</label>
-    <input name="Estado" v-model="Estado"/>
+    <input name="Estado" v-model="Estado" />
     <button class="mt-4" @click.prevent="postProduct">Add product</button>
   </form>
-  <button class="mt-4" @click.prevent="postProduct">ir a web</button>
+  <a class="btn" href="../src/otra_web/paginas/index.html">WEB</a>
 </template>
 
 <script>
@@ -44,19 +44,25 @@ export default {
 </script>
 
 <style>
-.flex {
-border: solid 1px;
-margin-top: 20px;
-background-color: dimgrey;
+body {
+  background-image: url(./images/huellas-patas-verdes-blancas-sobre-fondo-verde_30495-134.jpg);
 }
 
-.mt-4{
+.btn {
+  background-color: rgb(203, 68, 37);
+}
+
+.flex {
+  border: solid 1px;
+  margin-top: 20px;
+  background-color: dimgrey;
+}
+
+.mt-4 {
   background-color: brown;
 }
 
-.mt-4:hover{
+.mt-4:hover {
   background-color: rgb(43, 152, 76);
 }
-
-
 </style>

@@ -1,0 +1,220 @@
+.especialidades {
+  text-align: center;
+  color: indianred;
+}
+
+.interna {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.cirugia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.listaCirugia {
+  margin: 80px;
+}
+
+.cirugia2 {
+  text-align: center;
+}
+
+.dermatologia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.traumatologia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cardiologia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.oncologia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.oftalmologia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ecografia {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.felina {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.vacunacion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.Analisis {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lista_analisis {
+  margin: 80px;
+}
+
+.nutricion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.chip {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hospital {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pelu {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas */
+  grid-template-rows: repeat(3, 1fr);
+  /* 2 filas */
+  gap: 10px;
+  /* Espacio entre elementos */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid black; Borde para visualizar mejor */
+  margin-top: 50px;
+}
+
+.grid-item img {
+  max-width: 25%;
+  height: auto;
+}
+
+.grid-item p a {
+  color: rgb(110, 206, 13);
+
+}
+
+.grid-item p a:hover {
+  color: rgb(176, 24, 24);
+}
+
+.form{
+  text-align: center;
+  padding: 30px;  
+}
+
+.form label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.form input{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.btn{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.fieldset{
+  background-image: url(../images/huellas-patas-verdes-blancas-sobre-fondo-verde_30495-134.jpg);
+}
+
+.menu{
+  float: right;
+  font-size: 20px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.menu-item {
+  margin-right: 25px;
+}
+
+.menu  li a {
+  text-decoration: none;
+  color: rgb(110, 206, 13);
+}
+
+header {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  
+ 
+top: 0;
+  
+ 
+right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el menú */
+  padding: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  
+ 
+margin: 0;
+}
+
+.menu li {
+  
+ 
+display: inline;
+  
+ 
+margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
